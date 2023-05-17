@@ -1,5 +1,5 @@
 import Footer from './components/footer/Footer'
-import Menu from './components/menu/Menu'
+import Header from './components/header/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <Menu></Menu>
+          <Header></Header>
         </header>
         <div className='min-h-screen'>
           {children}

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-export default async function Menu() {
+export async function Menu() {
   let categorias:[] = [];
 
-  const response = await fetch('https://fakestoreapi.com/products/categories');
+  const response = await fetch('https://fakestoreapi.com/products/categories', { cache: 'force-cache' });
   categorias = await response.json();
   
    return (

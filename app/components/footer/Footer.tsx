@@ -14,7 +14,7 @@ export default function Footer(){
             <div className="flex justify-center gap-10 m-10">
                 Footer
                 {itens.map(item => 
-                    <Link href={item.url}>{item.descricao}</Link>  
+                    <Link href={item.url} key={item.descricao}>{item.descricao}</Link>  
                 )}
             </div>
         </div>
