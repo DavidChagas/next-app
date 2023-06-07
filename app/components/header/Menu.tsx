@@ -11,7 +11,7 @@ export async function Menu() {
     <div className='md:container md:mx-auto border-2 border-solid border-blue-300'>
       <div className="flex justify-center gap-10 m-10">
         <Link href={'/'}>HOME</Link>
-        <Link href={'/produtos/todos'}>Todos os Produtos</Link>
+        <Link href={'/produtos/todos'}>TODOS os Produtos</Link>
         {categorias.map(item => (
           <Link href={`/produtos/${item}`} key={item}>{item}</Link>
         ))}
